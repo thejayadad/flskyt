@@ -16,10 +16,10 @@ cur.execute("""CREATE TABLE IF NOT EXISTS note(
 )
             """)
 
-insert_scripts = 'INSERT INTO note (id, title, content) VALUES (%s,%s,%s)'
-insert_value = (10, "Exercise", "Get 45 minutes of exercise")
+# insert_scripts = 'INSERT INTO note (id, title, content) VALUES (%s,%s,%s)'
+# insert_value = (10, "Exercise", "Get 45 minutes of exercise")
 
-cur.execute(insert_scripts, insert_value)
+# cur.execute(insert_scripts, insert_value)
 
 #GET ALL
 @app.route("/", methods=['GET'])
